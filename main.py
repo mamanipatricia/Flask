@@ -1,8 +1,5 @@
-# import requests
-from flask import Flask, request, make_response, redirect, render_template, session, json
-# from flask_bootstrap import Bootstrap
-# from flask_wtf import FlaskForm
-
+from flask import Flask, request, make_response, redirect, render_template
+from flask import session,  json
 
 app = Flask(__name__)
 
@@ -13,43 +10,44 @@ todos = ['Comprar Cafe', 'Enviar Solicitud de compra', 'ENtregar video al']
 
 datas = [
 
-        {
-            "userId": 7,
-            "id": 65,
-            "title": "consequatur id enim sunt et et",
-            "body": "voluptatibus ex esse s"
-        },
-        {
-            "userId": 7,
-            "id": 66,
-            "title": "repudiandae ea animi iusto",
-            "body": "officia veritatis teneto saepe"
-        },
-        {
-            "userId": 7,
-            "id": 67,
-            "title": "aliquid eos sed fuga est maxime repellendus",
-            "body": "reprehenderit id nostressitatibus molestiae"
-        },
-        {
-            "userId": 7,
-            "id": 68,
-            "title": "odio quis facere architecto reiciendis optio",
-            "body": "magnam molestiae perfeorro velit"
-        },
-        {
-            "userId": 7,
-            "id": 69,
-            "title": "fugiat quod pariatur odit minima",
-            "body": "officiisudiandae asperiores et saepe a"
-        },
-        {
-            "userId": 7,
-            "id": 70,
-            "title": "voluptatem laborum magni",
-            "body": "sunt repdolore"
-        }
-    ]
+    {
+        "userId": 7,
+        "id": 65,
+        "title": "consequatur id enim sunt et et",
+        "body": "voluptatibus ex esse s"
+    },
+    {
+        "userId": 7,
+        "id": 66,
+        "title": "repudiandae ea animi iusto",
+        "body": "officia veritatis teneto saepe"
+    },
+    {
+        "userId": 7,
+        "id": 67,
+        "title": "aliquid eos sed fuga est maxime repellendus",
+        "body": "reprehenderit id nostressitatibus molestiae"
+    },
+    {
+        "userId": 7,
+        "id": 68,
+        "title": "odio quis facere architecto reiciendis optio",
+        "body": "magnam molestiae perfeorro velit"
+    },
+    {
+        "userId": 7,
+        "id": 69,
+        "title": "fugiat quod pariatur odit minima",
+        "body": "officiisudiandae asperiores et saepe a"
+    },
+    {
+        "userId": 7,
+        "id": 70,
+        "title": "voluptatem laborum magni",
+        "body": "sunt repdolore"
+    }
+]
+
 
 @app.errorhandler(404)
 def not_found(error):
